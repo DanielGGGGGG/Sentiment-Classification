@@ -28,7 +28,6 @@ class Resource(object):
                     'Sentence': sentence,
                 }
         }
-
         # Create a JSON representation of the resource
         resp.body = json.dumps(doc, ensure_ascii=False)
 
