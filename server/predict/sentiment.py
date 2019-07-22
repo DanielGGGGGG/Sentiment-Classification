@@ -7,11 +7,11 @@ import jieba
 from keras.models import load_model
 from keras.preprocessing.sequence import pad_sequences
 
-with open('look/tokenizer.pickle','rb') as handle:
+with open('predict/tokenizer.pickle','rb') as handle:
     tokenizer = pickle.load(handle)
 
 MAX_SENTENCE_LENGTH = 50
-ml_model = load_model("look/api_test.h5")
+ml_model = load_model("predict/api_test.h5")
 
 class Resource(object):
 
