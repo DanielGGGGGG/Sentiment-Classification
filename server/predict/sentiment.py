@@ -22,7 +22,7 @@ class Resource(object):
         data = pad_sequences(sequences, maxlen=MAX_SENTENCE_LENGTH)
         pred = ml_model.predict_proba(data)
         doc = {
-            'KII_SCORE': 
+            'SENTIMENT SCORE': 
                 {
                     'SOCRE': float(pred[0][0]),
                     'Sentence': sentence,
