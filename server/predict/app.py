@@ -1,10 +1,10 @@
 import falcon
 
 # from .images import Resource
-from .sentiment import Resource
-
+from .sentiment import SentimentPredict
 
 api = application = falcon.API()
 
-sentiment = Resource()
-api.add_route('/sentiment', sentiment)
+sentimentPredictResource = SentimentPredict()
+
+api.add_route('/sentiment', sentimentPredictResource)

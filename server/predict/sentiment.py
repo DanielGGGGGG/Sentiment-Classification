@@ -13,7 +13,7 @@ with open('predict/tokenizer.pickle','rb') as handle:
 MAX_SENTENCE_LENGTH = 50
 ml_model = load_model("predict/api_test.h5")
 
-class Resource(object):
+class SentimentPredict(object):
 
     def on_get(self, req, resp):
 
